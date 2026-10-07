@@ -1,0 +1,418 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    min-height: 100%;
+    font-family: Inter, ui-sans-serif, system-ui, -apple-system,
+        BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: #f3f4f1;
+    color: #26302b;
+}
+
+body {
+    padding: 28px 16px;
+}
+
+.app {
+    max-width: 760px;
+    margin: 0 auto;
+}
+
+/* TOP */
+
+.top {
+    text-align: center;
+    margin-bottom: 22px;
+}
+
+.eyebrow {
+    font-size: 11px;
+    letter-spacing: 2.5px;
+    font-weight: 800;
+    color: #8b948e;
+}
+
+.top h1 {
+    font-size: 32px;
+    margin: 7px 0 5px;
+    letter-spacing: -1px;
+}
+
+.top p {
+    margin: 0;
+    color: #8a928d;
+    font-size: 13px;
+}
+
+
+/* WALLET */
+
+.wallet {
+    position: relative;
+    overflow: hidden;
+    padding: 28px;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #34433b, #53655a);
+    color: #fff;
+    box-shadow: 0 18px 40px #2d3c3522;
+}
+
+.wallet::after {
+    content: "";
+    position: absolute;
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    right: -65px;
+    top: -80px;
+    background: #ffffff10;
+}
+
+.wallet-label {
+    font-size: 12px;
+    color: #dce3de;
+}
+
+.balance {
+    font-size: 45px;
+    font-weight: 800;
+    letter-spacing: -2px;
+    margin: 5px 0 22px;
+}
+
+.wallet-bottom {
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #ffffff22;
+    padding-top: 15px;
+    font-size: 12px;
+}
+
+.wallet-bottom span {
+    color: #d1d9d4;
+}
+
+
+/* CONTENT */
+
+.content {
+    margin-top: 22px;
+    background: #fff;
+    border: 1px solid #e7e9e5;
+    border-radius: 28px;
+    padding: 25px;
+    box-shadow: 0 12px 30px #29352f0b;
+}
+
+
+/* LABEL */
+
+.field-label {
+    font-size: 11px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    color: #89928c;
+    margin-bottom: 8px;
+    display: block;
+}
+
+
+/* DATE */
+
+.date {
+    width: 100%;
+    height: 48px;
+    border: 1px solid #e2e5e1;
+    border-radius: 13px;
+    padding: 0 14px;
+    background: #fafbf9;
+    font-size: 14px;
+    color: #303a34;
+}
+
+
+/* MONEY TODAY */
+
+.today {
+    margin-top: 20px;
+    padding: 18px 20px;
+    border-radius: 18px;
+    background: #f4f7f3;
+    border: 1px solid #e4e9e4;
+}
+
+.today-row {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.today-row b {
+    font-size: 25px;
+    color: #65736a;
+}
+
+.today-row input {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    font-size: 31px;
+    font-weight: 800;
+    color: #29332e;
+}
+
+
+/* HEADINGS */
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 27px 0 12px;
+}
+
+.heading h2 {
+    font-size: 19px;
+    margin: 0;
+}
+
+.pill {
+    font-size: 11px;
+    color: #8b938e;
+    background: #f1f3f0;
+    padding: 6px 10px;
+    border-radius: 99px;
+}
+
+
+/* EXPENSES */
+
+.expenses {
+    display: grid;
+    gap: 10px;
+}
+
+.expense {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    padding: 13px;
+    border: 1px solid #eceeea;
+    border-radius: 17px;
+    background: #fff;
+}
+
+.ico {
+    width: 43px;
+    height: 43px;
+    border-radius: 14px;
+    display: grid;
+    place-items: center;
+    font-size: 18px;
+}
+
+.food {
+    background: #fff0e6;
+}
+
+.fare {
+    background: #eaf2fb;
+}
+
+.parents {
+    background: #faedf2;
+}
+
+.savings {
+    background: #eaf5ed;
+}
+
+.others {
+    background: #f0edfa;
+}
+
+.ename {
+    flex: 1;
+}
+
+.ename strong {
+    display: block;
+    font-size: 14px;
+}
+
+.ename span {
+    font-size: 11px;
+    color: #9aa19c;
+}
+
+
+/* AMOUNT */
+
+.amount {
+    width: 120px;
+    height: 42px;
+    border: 1px solid #e2e5e1;
+    border-radius: 11px;
+    background: #fafbf9;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.amount span {
+    font-size: 12px;
+    color: #929a95;
+}
+
+.amount input {
+    width: 100%;
+    border: 0;
+    outline: 0;
+    background: transparent;
+    text-align: right;
+    font-weight: 700;
+}
+
+
+/* SAVE BUTTON */
+
+.save {
+    width: 100%;
+    height: 54px;
+    margin-top: 19px;
+    border: 0;
+    border-radius: 16px;
+    background: #2f3c35;
+    color: white;
+    font-weight: 800;
+    letter-spacing: 0.6px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.save:hover {
+    opacity: 0.92;
+}
+
+
+/* HISTORY */
+
+.history {
+    margin-top: 30px;
+}
+
+.daygrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 13px;
+}
+
+.day {
+    padding: 18px;
+    border-radius: 20px;
+    min-height: 190px;
+    border: 1px solid #ffffffaa;
+    box-shadow: 0 7px 20px #34423b0b;
+}
+
+.day h3 {
+    margin: 0 0 12px;
+    font-size: 16px;
+}
+
+.day .line {
+    display: flex;
+    justify-content: space-between;
+    padding: 4px 0;
+    font-size: 12px;
+    color: #68726c;
+}
+
+.day .total {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #00000012;
+    font-weight: 800;
+    color: #303934;
+}
+
+
+/* DAY COLORS */
+
+.mon {
+    background: #e9f1f8;
+}
+
+.tue {
+    background: #eeeaf7;
+}
+
+.wed {
+    background: #e8f3ec;
+}
+
+.thu {
+    background: #f7f0dc;
+}
+
+.fri {
+    background: #faece1;
+}
+
+.sat {
+    background: #f8e9ef;
+}
+
+.sun {
+    background: #ebe9f7;
+}
+
+
+/* EMPTY HISTORY */
+
+.empty {
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 28px;
+    color: #9aa19c;
+    border: 1px dashed #dfe3de;
+    border-radius: 18px;
+}
+
+
+/* MOBILE */
+
+@media (max-width: 620px) {
+
+    body {
+        padding: 16px 10px;
+    }
+
+    .content {
+        padding: 18px;
+    }
+
+    .wallet {
+        padding: 23px;
+    }
+
+    .balance {
+        font-size: 37px;
+    }
+
+    .daygrid {
+        grid-template-columns: 1fr;
+    }
+
+    .ename span {
+        display: none;
+    }
+
+    .amount {
+        width: 105px;
+    }
+}

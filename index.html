@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Money Wallet</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="app">
+
+    <div class="top">
+        <div class="eyebrow">PERSONAL FINANCE</div>
+        <h1>My Money Wallet</h1>
+        <p>Keep your daily money simple.</p>
+    </div>
+
+    <!-- WALLET -->
+    <div class="wallet">
+        <div class="wallet-label">REMAINING BALANCE</div>
+
+        <div class="balance" id="remaining">
+            ₱0.00
+        </div>
+
+        <div class="wallet-bottom">
+            <span>Today's spending</span>
+            <b id="totalSpent">₱0.00 spent</b>
+        </div>
+    </div>
+
+
+    <!-- MAIN CONTENT -->
+    <div class="content">
+
+        <!-- DATE -->
+        <label class="field-label">DATE</label>
+
+        <input
+            class="date"
+            id="date"
+            type="date"
+        >
+
+
+        <!-- MONEY FOR TODAY -->
+        <div class="today">
+
+            <label class="field-label">
+                MONEY FOR TODAY
+            </label>
+
+            <div class="today-row">
+
+                <b>₱</b>
+
+                <input
+                    id="money"
+                    type="number"
+                    min="0"
+                    step="0.01"
+                    value="0"
+                    aria-label="Money for today"
+                >
+
+            </div>
+
+        </div>
+
+
+        <!-- EXPENSES -->
+        <div class="heading">
+
+            <h2>Today's Expenses</h2>
+
+            <span class="pill">
+                5 categories
+            </span>
+
+        </div>
+
+
+        <div class="expenses">
+
+            <!-- FOOD -->
+            <div class="expense">
+
+                <div class="ico food">
+                    🍜
+                </div>
+
+                <div class="ename">
+                    <strong>Food</strong>
+                    <span>Meals & snacks</span>
+                </div>
+
+                <div class="amount">
+
+                    <span>₱</span>
+
+                    <input
+                        id="food"
+                        type="number"
+                        min="0"
+                        step="0.01"
+                        value="0"
+                    >
+
+                </div>
+
+            </div>
+
+
+            <!-- FARE -->
+            <div class="expense">
+
+                <div class="ico fare">
+                    🚌
+                </div>
+
+                <div class="ename">
+                    <strong>Fare</strong>
+                    <span>Transportation</span>
+                </div>
+
+                <div class="amount">
+
+                    <span>₱</span>
+
+                    <input
+                        id="fare"
+                        type="number"
+                        min="0"
+                        step="0.01"
+                        value="0"
+                    >
+
+                </div>
+
+            </div>
+
+
+            <!-- PARENTS -->
+            <div class="expense">
+
+                <div class="ico parents">
+                    ♥
+                </div>
+
+                <div class="ename">
+                    <strong>Parents</strong>
+                    <span>Family support</span>
+                </div>
+
+                <div class="amount">
+
+                    <span>₱</span>
+
+                    <input
+                        id="parents"
+                        type="number"
+                        min="0"
+                        step="0.01"
+                        value="0"
+                    >
+
+                </div>
+
+            </div>
+
+
+            <!-- SAVINGS -->
+            <div class="expense">
+
+                <div class="ico savings">
+                    💰
+                </div>
+
+                <div class="ename">
+                    <strong>Savings</strong>
+                    <span>Money saved</span>
+                </div>
+
+                <div class="amount">
+
+                    <span>₱</span>
+
+                    <input
+                        id="savings"
+                        type="number"
+                        min="0"
+                        step="0.01"
+                        value="0"
+                    >
+
+                </div>
+
+            </div>
+
+
+            <!-- OTHERS -->
+            <div class="expense">
+
+                <div class="ico others">
+                    📦
+                </div>
+
+                <div class="ename">
+                    <strong>Others</strong>
+                    <span>Other expenses</span>
+                </div>
+
+                <div class="amount">
+
+                    <span>₱</span>
+
+                    <input
+                        id="others"
+                        type="number"
+                        min="0"
+                        step="0.01"
+                        value="0"
+                    >
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- SAVE -->
+        <button
+            class="save"
+            id="saveBtn"
+        >
+            SAVE DAY
+        </button>
+
+
+        <!-- PREVIOUS DAYS -->
+        <div class="history">
+
+            <div class="heading">
+
+                <h2>Previous Days</h2>
+
+                <span class="pill">
+                    Saved days
+                </span>
+
+            </div>
+
+            <div
+                class="daygrid"
+                id="history"
+            ></div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
